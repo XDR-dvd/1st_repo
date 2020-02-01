@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div,
+button {
+    margin: 10px;
+}
+
+@media print {
+    .not_printed {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        background-color: teal;
+    }
+
+    .hi::before {
+        content: "Hi! how R u today?";
+    }
+}
+
+@media (max-width: 799px) {
+    body {
+
+        background-color: violet;
+    }
+
+    .hi::before {
+        content: "Hi!";
+    }
+}
